@@ -77,7 +77,7 @@ public class Counter {
 		return resultado;
 	}
 	
-	//3)
+	// 3)
 	
 	public int multiploMasGrande(int x, int y) {
 		int resultado = -1;
@@ -89,5 +89,31 @@ public class Counter {
 		}
 		return resultado;
 	}
+	
+	// 4)
+	/* Dado el siguiente código:
+	 *   String a = "abc";
+		 String s = a;
+		 String t;
+	
+       Indique que valores retornan las siguientes expresiones o, si dan error, por qué se producen:
+		 
+		 s.length(); Esto devuelve el número 3 ya que se pide la cantidad de caracteres que hay en el String 'a', que, a su vez, tiene
+		              almacenado "abc". 
+		 t.length(); Esto devuelve el error ya que la variable 't' no está inicializada.
+		 1 + a;      Esto devuelve "1abc" ya que el '+' concatena el 1 con lo que tiene asignada la variable 'a'.
+		 a.toUpperCase(); Esto tranforma todo el string que está en la variable 'a' y lo vuelve todo mayúscula.
+		 "Libertad".indexOf("r"); Devuelve el número 4 ya que es la posición en donde está el caracter pasado por parentesis.
+		                           Observación: El String arranca en la posición 0.
+		 "Universidad".lastIndexOf('i'); Devuelve el número 7 ya que es la posición en donde está el último caracter que está pasado
+		                                  por parentesis. Notar que hay mas de una 'i'.
+         "Quilmes".substring(2,4); Devuelve el String "il" ya que está dentro de las posiciones pasadas por parámetros menos la última
+                                    letra.
+		 (a.length() + a).startsWith("a"); Devuelve false ya que no empieza con el string "a".
+		 s == a; Devuelve true ya que si son iguales.
+		 a.substring(1,3).equals("bc"); Devuelve true ya que, al hacer substring del string contenido en la variable 'a', se obtiene
+		                                 el string que está dentro de las posiciones pasadas menos la primera letra.
+
+	 * */
 	
 }
