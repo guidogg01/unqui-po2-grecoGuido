@@ -113,7 +113,6 @@ public class Counter {
 		 s == a; Devuelve true ya que si son iguales.
 		 a.substring(1,3).equals("bc"); Devuelve true ya que, al hacer substring del string contenido en la variable 'a', se obtiene
 		                                 el string que está dentro de las posiciones pasadas menos la primera letra.
-
 	 * */
 	
 }

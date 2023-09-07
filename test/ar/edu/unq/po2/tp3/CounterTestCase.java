@@ -9,6 +9,8 @@ import org.junit.jupiter.api.Test;
 
 
 public class CounterTestCase {
+	
+	private Integer x;
 		
 	private Counter counter;
 	
@@ -85,6 +87,12 @@ public class CounterTestCase {
 	@Test
 	public void testDeMultiplos() {
 		assertEquals(621, counter.multiploMasGrande(27, 23));
+	}
+	
+	@Test
+	public void testPrueba(){
+		
+		assertEquals(0, x);
 	}
 	
 }
