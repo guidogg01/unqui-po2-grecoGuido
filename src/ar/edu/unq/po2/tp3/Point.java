@@ -12,11 +12,8 @@ public class Point {
 	}
 	
 	Point(){
-		this.setX(0);
-		this.setY(0);
+		this(0,0); //Llamo al constructor de arriba para no repetir código.
 	}
-
-	// Es correcto tener los getters y los setters publicos? En este caso los preciso de esta manera.
 	
 	public int getX() {
 		return x;
@@ -37,7 +34,7 @@ public class Point {
 	public Point sumarCon(Point punto) {
 		int newX = this.getX() + punto.getX();
 		int newY = this.getY() + punto.getY();
-		Point newPoint = new Point(newX, newY); //Preguntar.
+		Point newPoint = new Point(newX, newY);
 		return newPoint;
 	}
 	
