@@ -5,21 +5,20 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class ProductoTestCase {
+class ImpuestoTestCase {
 
-	private Producto lataDeTomate;
+	private Impuesto impuesto;
 	
 	@BeforeEach
 	void setUp() {
 		
-		lataDeTomate = new Producto(15, 75);
+		impuesto = new Impuesto(130);
 		
 	}
 
 	@Test
 	void testDeVerificacionDeConstructor() {
-		assertEquals(15, this.lataDeTomate.getStock());
-		assertEquals(75d, this.lataDeTomate.costo());
+		assertEquals(130, this.impuesto.costo());
 	}
 
 }

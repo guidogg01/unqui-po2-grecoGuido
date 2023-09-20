@@ -38,7 +38,7 @@ class CajaTestCase {
 	@Test
 	void testDeVerificacionConUnProducto() {
 		
-		caja.registrarProductoCliente(lataDeTomate);
+		caja.registrarPagoCliente(lataDeTomate);
 		
 		assertEquals(80, caja.informarMontoTotal());
 		assertEquals(11, lataDeTomate.getStock()); //Acá es correcto que pruebe con el producto o al ser el test de caja debería trabajar con caja?
@@ -47,7 +47,7 @@ class CajaTestCase {
 	@Test
 	void testDeVerificacionConUnProductoCooperativa() {
 		
-		caja.registrarProductoCliente(ventilador);
+		caja.registrarPagoCliente(ventilador);
 		
 		assertEquals(412.5d, caja.informarMontoTotal());
 		assertEquals(2, ventilador.getStock()); //Acá es correcto que pruebe con el producto o al ser el test de caja debería trabajar con caja?
@@ -56,11 +56,11 @@ class CajaTestCase {
 	@Test
 	void testDeVerificacionConMuchosProductos() {
 		
-		caja.registrarProductoCliente(lataDeTomate);
-		caja.registrarProductoCliente(lataDeArbejas);
-		caja.registrarProductoCliente(lataDeMaiz);
-		caja.registrarProductoCliente(alfombra);
-		caja.registrarProductoCliente(ventilador);
+		caja.registrarPagoCliente(lataDeTomate);
+		caja.registrarPagoCliente(lataDeArbejas);
+		caja.registrarPagoCliente(lataDeMaiz);
+		caja.registrarPagoCliente(alfombra);
+		caja.registrarPagoCliente(ventilador);
 		
 		assertEquals(837.5d, caja.informarMontoTotal());
 		assertEquals(11, lataDeTomate.getStock());

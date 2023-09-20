@@ -19,7 +19,7 @@ class ProductoCooperativaTestCase {
 	@Test
 	void testDeVerificacionDeConstructor() {
 		assertEquals(6, this.alfombra.getStock());
-		assertEquals(165d, this.alfombra.getPrecio());
+		assertEquals(165d, this.alfombra.costo());
 	}
 
 }

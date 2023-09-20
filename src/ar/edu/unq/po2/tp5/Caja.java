@@ -14,7 +14,7 @@ public class Caja {
 		this.montoAPagar = montoAPagar;
 	}
 	
-	public void registrarProductoCliente(Producto producto) {
+	public void registrarPagoCliente(Producto producto) {
 		this.agregarPrecioAlMonto(producto);
 		this.reducirStockDe(producto);
 	}
@@ -26,7 +26,7 @@ public class Caja {
 	//Se hacen dos refactors así queda mas legible.
 	
 	private void agregarPrecioAlMonto(Producto producto) {
-		this.setMontoAPagar(this.getMontoAPagar() + producto.getPrecio());
+		this.setMontoAPagar(this.getMontoAPagar() + producto.costo());
 	}
 	
 	private void reducirStockDe(Producto producto) {
