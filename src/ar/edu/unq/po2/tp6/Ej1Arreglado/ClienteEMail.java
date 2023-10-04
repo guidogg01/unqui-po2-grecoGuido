@@ -1,16 +1,16 @@
-package ar.edu.unq.po2.tp6;
+package ar.edu.unq.po2.tp6.Ej1Arreglado;
 
 import java.util.ArrayList;
 
 public class ClienteEMail {
 	
-	ServidorPop servidor;
-	String nombreUsuario;
-	String passusuario;
-	ArrayList<Correo> inbox;
+	private ServidorPopConeccion servidor;
+	private String nombreUsuario;
+	private String passusuario;
+	private ArrayList<Correo> inbox;
 	private ArrayList<Correo> borrados;
 	
-	public ClienteEMail(ServidorPop servidor, String nombreUsuario, String pass){
+	public ClienteEMail(ServidorPopConeccion servidor, String nombreUsuario, String pass){
 		this.servidor=servidor;
 		this.nombreUsuario=nombreUsuario;
 		this.passusuario=pass;
