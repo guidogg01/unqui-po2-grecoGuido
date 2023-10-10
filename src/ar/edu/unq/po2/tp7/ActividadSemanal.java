@@ -46,7 +46,7 @@ public class ActividadSemanal {
 		this.deporteQueSePractica = deporteQueSePractica;
 	}
 	
-	public double costoDeActividadSemanal() {
+	public Double costoDeActividadSemanal() {
 		
 		if(this.getDiaDeLaSemana() == DiaDeLaSemana.LUNES
 		   || this.getDiaDeLaSemana() == DiaDeLaSemana.MARTES
@@ -57,5 +57,10 @@ public class ActividadSemanal {
 		}
 		
 	}
+	
+	@Override
+    public String toString() {
+        return "Deporte: " + this.getDeporteQueSePractica() + ". Dia: " + this.getDiaDeLaSemana() + " A LAS: " + this.getHoraDeInicio() + " . Duración: " + this.getDuracion() + " hora(s).";
+    }
 	
 }
