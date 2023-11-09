@@ -6,6 +6,11 @@ import static org.mockito.Mockito.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import ar.edu.unq.po2.tp11Strategy.ej1.EncriptadorNaive;
+import ar.edu.unq.po2.tp11Strategy.ej1.EncriptadorPorNumero;
+import ar.edu.unq.po2.tp11Strategy.ej1.EncriptadorPorPalabrasAleatorias;
+import ar.edu.unq.po2.tp11Strategy.ej1.EncriptadorPorVocal;
+
 class EncriptadorNaiveTestCase {
 
 	private EncriptadorNaive encriptador;

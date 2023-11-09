@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp11Strategy;
+package ar.edu.unq.po2.tp11Strategy.ej1;
 
 public interface IEncriptadorNaive {
 
