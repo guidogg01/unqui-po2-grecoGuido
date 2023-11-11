@@ -5,47 +5,33 @@ import java.util.ArrayList;
 
 public class SistemaDePublicaciones {
 
-	private List<Persona> miembros;
+	private List<Interes> intereses;
 	private List<Articulo> articulos;
-
+	
 	SistemaDePublicaciones() {
-		this.setMiembros(new ArrayList<Persona>());
+		this.setIntereses(new ArrayList<Interes>());
 		this.setArticulos(new ArrayList<Articulo>());
 	}
-
-	private List<Persona> getMiembros() {
-		return miembros;
+	
+	public List<Interes> getIntereses() {
+		return intereses;
 	}
-
-	private void setMiembros(List<Persona> miembros) {
-		this.miembros = miembros;
+	
+	private void setIntereses(List<Interes> intereses) {
+		this.intereses = intereses;
 	}
-
+	
 	private List<Articulo> getArticulos() {
 		return articulos;
 	}
-
+	
 	private void setArticulos(List<Articulo> articulos) {
 		this.articulos = articulos;
 	}
 	
-	public void agregarMiembro(Persona miembro) {
-		if(this.getArticulos().stream().anyMatch(m -> m.getTitulo().contains("Java") || m.getTitulo().contains("Smalltalks"))) {
-			this.getMiembros().add(miembro);
-			}
+	public void cargarArticulo(Articulo articulo) {
+		this.intereses.stream().forEach(i -> i.llegoArticulo(articulo));
+		this.getArticulos().add(articulo);
 	}
 
-	public void cargarArticulo(Articulo articulo) {
-		this.getArticulos().add(articulo);
-		this.notificar(articulo);
-	}
-	
-	private void notificar(Articulo articulo) {
-		if(articulo.getTitulo().contains("Smalltalks") ||
-		   articulo.getTitulo().contains("Java")       ||
-		   articulo.getLugarDePublicacion().contains("Quilmes")) {			
-			this.getMiembros().stream().forEach(m -> m.mandarMail(articulo)); 
-		}
-	}
-	
 }
