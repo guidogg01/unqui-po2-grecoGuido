@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp11Strategy.ej1;
+package ar.edu.unq.po2.tp11.Strategy.ej1;
 
 public class EncriptadorNaive {
 
